@@ -12,11 +12,23 @@ http://poc.rhdemo.io/
 + Openshift instance
 
 ## Demo setup
-Remote login to the remote openshift instance. Create a new project and install the Red Hat Integration - AMQ Streams operator.
++ Remote login to the remote openshift instance. 
++ Create a new project and install the Red Hat Integration - AMQ Streams operator.
 This will setup the 3 node kafka cluster which we will use for the demo.
+.   ![Amqstreamsoperator](src/main/resources/images/amqstreams.png)
+
+
++ Install the Business Automation operator. We will use this for showcasing the business rules authoring using DMN.
+. ![Baoperator](src/main/resources/images/ba_operator.png)
+
++ On the business central, import project 
+```
+    https://github.com/snandakumar87/AutomationEventDecision
+```
++ Finally invoke the scripted install
 
 ```
-sh src/main/resources/provision-self-healing-poc.sh
+    sh src/main/resources/provision-self-healing-poc.sh
 ```
 
 ## Demo Environment Verification
