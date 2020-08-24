@@ -18,6 +18,7 @@ This will setup the 3 node kafka cluster which we will use for the demo.
 ```
 sh src/main/resources/provision-self-healing-poc.sh
 ```
+
 ##Demo Environment Verification
 Once the deployment completes, we should see a 3 node kafka cluster, 4 micro services, a kafka producer and a kafka consumer.
 ![Demo Topology](src/main/resources/images/ansible_architecture.png)
