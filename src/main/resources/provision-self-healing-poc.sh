@@ -1,5 +1,5 @@
 #Automation Event Decisions kjars
-git clone https://github.com/snandakumar87/AutomationEventDecision
+git clone https://github.com/internal-rh-repos/AutomationEventDecision
 cd AutomationEventDecision
 mvn clean install
 cd ..
@@ -9,7 +9,7 @@ oc new-app registry.access.redhat.com/ubi8/openjdk-11:latest~https://github.com/
 oc expose svc/kafka-sensu-producer
 
 #Micro services
-git clone https://github.com/snandakumar87/self-healing-services
+git clone https://github.com/internal-rh-repos/self-healing-services
 cd self-healing-services
 cd check-event-service
 mvn fabric8:deploy
